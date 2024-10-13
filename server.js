@@ -6,7 +6,7 @@ const app = express();
 
 // Configuração do proxy
 app.use('/proxy', createProxyMiddleware({
-  target: 'http://cloudfm.playhdlugo.online', // Alvo original (HTTP)
+  target: 'http://cdn-br.in', // Alvo original (HTTP)
   changeOrigin: true,
   pathRewrite: {
     '^/proxy': '', // Remove /proxy do caminho da URL
