@@ -5,7 +5,7 @@ const app = express();
 
 // Configuração do proxy
 app.use('/proxy', createProxyMiddleware({
-  target: 'http://cdn-br.in:80/978460358/473005646', // Alvo original (HTTP)
+  target: 'http://cdn-br.in/movie/978460358/473005646', // Alvo original (HTTP)
   changeOrigin: true,
   pathRewrite: {
     '^/proxy': '', // Remove /proxy do caminho da URL
