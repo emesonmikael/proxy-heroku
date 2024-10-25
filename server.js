@@ -5,7 +5,7 @@ const app = express();
 
 // Configuração do proxy
 app.use('/proxy', createProxyMiddleware({
-  target: 'http://fastcdn.fun', // Alvo original (HTTP)
+  target: 'http://conexaoiptv.online:80', // Alvo original (HTTP)
   changeOrigin: true,
   pathRewrite: {
     '^/proxy': '', // Remove /proxy do caminho da URL
