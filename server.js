@@ -5,7 +5,7 @@ const app = express();
 
 // Configuração do proxy
 app.use('/proxy', createProxyMiddleware({
-  target: 'http://srvdns.vc:80', // Alvo original (HTTP)
+  target: 'http://cdn.srvmain.top:80', // Alvo original (HTTP)
   changeOrigin: true,
   pathRewrite: {
     '^/proxy': '', // Remove /proxy do caminho da URL
